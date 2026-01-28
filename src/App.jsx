@@ -2,10 +2,23 @@ import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Main from "./components/main";
 
+const links = [
+  {
+    id: 1,
+    title: "Home",
+    url: "/",
+  },
+  {
+    id: 2,
+    title: "About",
+    url: "/about",
+  }
+];
+
 export default function App() {
   return (
     <div>
-      <Navbar />
+      <Navbar brandName="Test" links={links}/>
       <Main/>
       <Footer />
     </div>
