@@ -14,7 +14,7 @@ const Main = () => {
     increment(value);
   }
   return (
-    <div>
+    <div className="">
       count: {count}
       <form onSubmit={handleSubmit}>
         <label htmlFor="incrementer">Incrementer:</label>
