@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { SignedOut, SignedIn, SignInButton,UserButton } from "@clerk/clerk-react"
 
 const Navbar = (props) => {
   return (
@@ -11,6 +12,14 @@ const Navbar = (props) => {
           </li>
         ))}
       </ul>
+      <div>
+        <SignedOut>
+          <SignInButton />
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
+      </div>
     </div>
   );
 };
