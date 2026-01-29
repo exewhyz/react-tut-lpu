@@ -19,7 +19,7 @@ export default function App() {
   return (
     <div>
       <Navbar brandName="Test" links={links}/>
-      <Main/>
+      <Main />
       <Footer />
     </div>
   );

@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 const Navbar = (props) => {
   return (
     <div>
@@ -5,7 +7,7 @@ const Navbar = (props) => {
       <ul>
         {props?.links?.map((link) => (
           <li key={link?.id}>
-            <a href={link?.url}>{link?.title}</a>
+            <Link to={link?.url}>{link?.title}</Link>
           </li>
         ))}
       </ul>
