@@ -1,6 +1,7 @@
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Main from "./components/main";
+import Todos from "./components/todos";
 
 const links = [
   {
@@ -20,6 +21,7 @@ export default function App() {
     <div>
       <Navbar brandName="Test" links={links}/>
       <Main />
+      <Todos />
       <Footer />
     </div>
   );
